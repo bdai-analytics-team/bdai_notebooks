@@ -338,9 +338,3 @@ class LongShort:
 ls = LongShort()
 ls.run()
 
-
-# In[ ]:
-
-
-
-
