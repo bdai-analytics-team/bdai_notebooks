@@ -19,7 +19,9 @@ APCA_API_BASE_URL = "https://paper-api.alpaca.markets"
     # fok = 
 # price = price to purchase only used if typeW is limit (ie 20.50 = $20.50)
 
-# required: symbol of company to purchase stock from, quantity to purchase, type of purchase, time_force, 
+# required parameters: symbol of company to purchase stock from, quantity to purchase, type of purchase, time_force, 
+# API_key, API_secret key, and API base URL of Alpaca paper trading
+# 
 def buyStock(symbolCompany, quantity, typeW, time_force, price, API_KEY_buy, API_SECRET_buy, APCA_API_BASE_URL_buy, api_v = 'v2', buy = 'buy'): 
     # checks if limit_price argument is needed. 
     api = tradeapi.REST(API_KEY_buy, API_SECRET_buy, APCA_API_BASE_URL_buy, api_version=api_v)
