@@ -1,18 +1,8 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[26]:
-
-
 import alpaca_trade_api as tradeapi
 
 API_KEY = "PK1U84UG2RUCT4R6HQZ5"
 API_SECRET = "baU//9pMyfMsb41P6Oppm7CHOucgYLDuJXIk8pKQ"
 APCA_API_BASE_URL = "https://paper-api.alpaca.markets"
-
-
-# In[27]:
-
 
 # company symbols
 # quantity
@@ -51,15 +41,4 @@ def buyStock(symbolCompany, quantity, typeW, time_force, price, API_KEY_buy, API
             time_in_force= time_force)
     return
 
-
-# In[29]:
-
-
-buyStock('AAPL', 10, 'market', 'day', 20.50, API_KEY, API_SECRET, APCA_API_BASE_URL)
-
-
-# In[ ]:
-
-
-
-
+# buyStock('AAPL', 10, 'market', 'day', 20.50, API_KEY, API_SECRET, APCA_API_BASE_URL)
