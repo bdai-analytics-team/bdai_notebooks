@@ -27,3 +27,8 @@ def get_jsonparsed_data(url):
 
 url = ("https://financialmodelingprep.com/api/company/real-time-price/AAPL?datatype=json")
 print(get_jsonparsed_data(url))
+
+    ""
+    For more information, see developer docs 
+    https://financialmodelingprep.com/developer/docs/#Stock-Price        
+    ""
